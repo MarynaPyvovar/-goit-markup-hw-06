@@ -543,10 +543,13 @@ text-transform: uppercase;
 
 }
 .policy-check {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 .policy-check .policy-text {
+  margin-left: 7px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
