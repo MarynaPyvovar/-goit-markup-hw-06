@@ -185,10 +185,12 @@ border-radius: 2px;
 .btn-s {
   padding: 10px 32px;
   color: var(--white-color);
-  background-color: var(--accent-color);
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .btn-s:hover,
 .btn-s:focus {
@@ -456,7 +458,6 @@ text-transform: uppercase;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 528px;
-  min-height: 581px;
   padding: 40px;
   background-color: var(--white-color);
 }
@@ -482,6 +483,8 @@ text-transform: uppercase;
 }
 
 .modal-title {
+  margin-top: 0;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -492,14 +495,17 @@ text-transform: uppercase;
 
 .form {
   width: 448px;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .form-field {
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-field:last-child {
+  margin-bottom: 20px;
 }
 
 .form-field label {
@@ -521,7 +527,6 @@ text-transform: uppercase;
 .form-field textarea {
   resize: none;
   padding: 12px 16px;
-  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -533,6 +538,20 @@ text-transform: uppercase;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+
+.policy-check input[type="checkbox"] {
+
+}
+.policy-check {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.policy-check .policy-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 
 /* =====portfolio===== */
 
