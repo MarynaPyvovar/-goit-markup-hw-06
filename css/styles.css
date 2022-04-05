@@ -566,12 +566,22 @@ text-transform: uppercase;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+.form-field input:hover,
+.form-field textarea:hover {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
 
 .modal-icon {
   position: absolute;
   bottom: 11px;
   left: 11px;
   fill: var(--title-color);
+}
+
+.form-field input:focus ~ .modal-icon,
+.form-field input:hover ~ .modal-icon {
+  fill: var(--accent-color);
 }
 
 .form-field textarea {
