@@ -545,6 +545,7 @@ text-transform: uppercase;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  position: relative;
 }
 .form-field:last-child {
   margin-bottom: 20px;
@@ -561,9 +562,16 @@ text-transform: uppercase;
 .form-field input {
   width: 448px;
   height: 40px;
-  padding: 12px;
+  padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.modal-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 11px;
+  fill: var(--title-color);
 }
 
 .form-field textarea {
@@ -595,6 +603,10 @@ text-transform: uppercase;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.policy-link {
+  color: var(--accent-color);
 }
 
 
