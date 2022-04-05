@@ -463,6 +463,16 @@ text-transform: uppercase;
   display: flex;
 }
 
+.subscribe .button {
+  display: flex;
+  align-items: center;
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: var(--white-color);
+}
+
 /* =======Backdrop+Modal */
 
 .backdrop {
