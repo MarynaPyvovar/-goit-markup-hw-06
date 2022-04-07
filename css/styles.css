@@ -547,7 +547,7 @@ text-transform: uppercase;
   margin-bottom: 10px;
   position: relative;
 }
-.form-field:last-child {
+.form-field.comment {
   margin-bottom: 20px;
 }
 
@@ -602,10 +602,6 @@ text-transform: uppercase;
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* .policy-check input[type="checkbox"] {
-
-} */
-
 .policy-text {
   display: inline-block;
   display: flex;
@@ -641,6 +637,12 @@ text-transform: uppercase;
   background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
+}
+
+.btn-send {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* =====portfolio===== */
