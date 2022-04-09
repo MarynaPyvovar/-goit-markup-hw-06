@@ -579,8 +579,9 @@ text-transform: uppercase;
 
 .modal-icon {
   position: absolute;
-  bottom: 11px;
+  top: 50%;
   left: 11px;
+  translate: tranformY(-50%);
   fill: var(--title-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -635,6 +636,9 @@ text-transform: uppercase;
   background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
+}
+.check:focus + .check-icon {
+  border: 2px solid var(--accent-color);
 }
 
 .btn-send {
