@@ -183,7 +183,12 @@ border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-s {
-  padding: 10px 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
   color: var(--white-color);
   font-weight: 700;
   line-height: 1.87;
@@ -467,10 +472,11 @@ text-transform: uppercase;
 .subscribe .button {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+
 }
 
 .icon-send {
-  margin-left: 10px;
   fill: var(--white-color);
 }
 
@@ -524,6 +530,10 @@ text-transform: uppercase;
 .close-x {
   fill: black;
 }
+.button-close:hover .close-x,
+.button-close:focus .close-x {
+  fill: var(--accent-color);
+}
 
 .modal-title {
   margin-top: 0;
@@ -561,7 +571,7 @@ text-transform: uppercase;
 }
 
 .form-field input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -592,6 +602,8 @@ text-transform: uppercase;
 }
 
 .form-field textarea {
+  width: 100%;
+  height: 120px;
   resize: none;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -637,15 +649,11 @@ text-transform: uppercase;
   background-size: contain;
   background-origin: border-box;
 }
-.check:focus + .check-icon {
+.check:focus + .check-icon,
+.check:hover + .check-icon {
   border: 2px solid var(--accent-color);
 }
 
-.btn-send {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* =====portfolio===== */
 
